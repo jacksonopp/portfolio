@@ -1,10 +1,28 @@
 const apps = [
     {
+        appName: "eatDaBurger",
+        src: "./assets/images/eatDaBurger.png",
+        alt: "a screenshot of web app",
+        title: "Eat Da Burger",
+        description: "A full-stack MySQL and Express based web app that allows you to enter the name of a burger and then devour it.",
+        gitHub: "https://github.com/jacksonopp/eat-da-burger",
+        appLink: "https://eat-da-burger-jacksonopp.herokuapp.com/"
+    },
+    {
+        appName: "friendFinder",
+        src: "./assets/images/friendFinder.png",
+        alt: "a screenshot of a friend finder app",
+        title: "Friend Finder",
+        description: "An express.js web-app that finds your best new friend.",
+        gitHub: "https://github.com/jacksonopp/friend-finder",
+        appLink: "https://friend-finder-jacksonopp.herokuapp.com/"
+    },
+    {
         appName: "trackTrek",
         src: "./assets/images/trackTrek.png",
         alt: "a screenshot of a music playlist app",
         title: "TrackTrek",
-        description: "An app to create a playlist based on drive time",
+        description: "An app to create a playlist based on drive time.",
         gitHub: "https://github.com/jacksonopp/TeamCharmander",
         appLink: "https://jacksonopp.github.io/TeamCharmander/"
     },
@@ -61,7 +79,7 @@ const apps = [
         description: "Each crystal has a different value. Can you get the correct score?",
         gitHub: "https://github.com/jacksonopp/unit-4-game",
         appLink: "https://jacksonopp.github.io/unit-4-game/"
-    }
+    },
 ]
 
 function makeCards() {
