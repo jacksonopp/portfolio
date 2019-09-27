@@ -2,4 +2,4 @@
 
 bootstrap version of the basic-portfolio
 
-https://jacksonopp.github.io/bootstrap-portfolio/
+https://jacksonopp.github.io/portfolio/
