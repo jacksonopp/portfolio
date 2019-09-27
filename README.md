@@ -1,5 +1,3 @@
-# bootstrap-portfolio
-
-bootstrap version of the basic-portfolio
+# Portfolio
 
 https://jacksonopp.github.io/portfolio/
