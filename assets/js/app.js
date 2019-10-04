@@ -4,7 +4,7 @@ const apps = [
         src: "./assets/img/rlgl.png",
         alt: "a screenshot of web app",
         title: "Red Light Green Light",
-        description: "A full-stack MySQL and Express based social media web app that connectds car enthusiasts to each other.",
+        description: "A full-stack MySQL and Express based social media web app that connects car enthusiasts to each other.",
         gitHub: "https://github.com/jacksonopp/justice-league",
         appLink: "https://jl-testing.herokuapp.com/"
     },
