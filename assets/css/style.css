@@ -78,6 +78,8 @@ p {
 
 #about-me {
    margin-left: 250px;
+   margin-bottom: 15vh;
+   margin-top: 5vh;
    transition: margin-left 0.5s;
    padding: 20px;
    overflow: hidden;
@@ -85,6 +87,8 @@ p {
 }
 #portfolio-section {
    margin-left: 250px;
+   margin-bottom: 5vh;
+   margin-top: 5vh;
    transition: margin-left 0.5s;
    padding: 20px;
    overflow: hidden;
@@ -92,6 +96,7 @@ p {
 }
 #contact-me {
    margin-left: 250px;
+   margin-top: 7vh;
    transition: margin-left 0.5s;
    padding: 20px;
    overflow: hidden;
@@ -105,10 +110,10 @@ p {
    width: 100%;
 }
 
-.about-me {
+/* .about-me {
    height: 105vh;
-   /* background: rebeccapurple; */
-}
+   background: rebeccapurple;
+} */
 
 .profile-pic {
    position: relative;
