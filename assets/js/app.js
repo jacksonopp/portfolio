@@ -1,7 +1,16 @@
 const apps = [
     {
+        appName: "redLightGreenLight",
+        src: "./assets/img/rlgl.png",
+        alt: "a screenshot of web app",
+        title: "Red Light Green Light",
+        description: "A full-stack MySQL and Express based social media web app that connectds car enthusiasts to each other.",
+        gitHub: "https://github.com/jacksonopp/justice-league",
+        appLink: "https://jl-testing.herokuapp.com/"
+    },
+    {
         appName: "eatDaBurger",
-        src: "./assets/images/eatDaBurger.png",
+        src: "./assets/img/eatDaBurger.png",
         alt: "a screenshot of web app",
         title: "Eat Da Burger",
         description: "A full-stack MySQL and Express based web app that allows you to enter the name of a burger and then devour it.",
@@ -10,7 +19,7 @@ const apps = [
     },
     {
         appName: "friendFinder",
-        src: "./assets/images/friendFinder.png",
+        src: "./assets/img/friendFinder.png",
         alt: "a screenshot of a friend finder app",
         title: "Friend Finder",
         description: "An express.js web-app that finds your best new friend.",
@@ -19,7 +28,7 @@ const apps = [
     },
     {
         appName: "trackTrek",
-        src: "./assets/images/trackTrek.png",
+        src: "./assets/img/trackTrek.png",
         alt: "a screenshot of a music playlist app",
         title: "TrackTrek",
         description: "An app to create a playlist based on drive time.",
@@ -28,7 +37,7 @@ const apps = [
     },
     {
         appName: "gifTastic",
-        src: "./assets/images/gifTastic.png",
+        src: "./assets/img/gifTastic.png",
         alt: "a screenshot of a gif search engine",
         title: "Gif Tastic!",
         description: "Look up gifs of your favorite comedians (or anything else) using the giphy API.",
@@ -37,7 +46,7 @@ const apps = [
     },
     {
         appName: "triviaGame",
-        src: "./assets/images/triviaGame.png",
+        src: "./assets/img/triviaGame.png",
         alt: "a screenshot of a coen brothers trivia game",
         title: "Coen Brothers Trivia Game",
         description: "A timed trivia quiz about the Cohen Brothers. How much do you know about the filmmaking duo?",
@@ -46,7 +55,7 @@ const apps = [
     },
     {
         appName: "nyt search",
-        src: "./assets/images/nytSearch.png",
+        src: "./assets/img/nytSearch.png",
         alt: "a screenshot of an app for searching the New York Times",
         title: "New York Times Search",
         description: "Search for articles using the New York Times API.",
@@ -55,7 +64,7 @@ const apps = [
     },
     {
         appName: "trainTime",
-        src: "./assets/images/trainTime.png",
+        src: "./assets/img/trainTime.png",
         alt: "a screenshot of a train time calculator",
         title: "Train Time",
         description: "Input train frequency and arrival times, and the app will calculate when the next scheduled arrival is. Using localForage, the app remembers your trains from previous sessions.",
@@ -64,7 +73,7 @@ const apps = [
     },
     {
         appName: "word guess",
-        src: "./assets/images/hangman.png",
+        src: "./assets/img/hangman.png",
         alt: "a screenshot of a hangman game",
         title: "Die wundersame Herausforderung der Bierstile!",
         description: "A simple hangman-style game where you try to guess different beer styles.",
@@ -73,7 +82,7 @@ const apps = [
     },
     {
         appName: "crystal guess",
-        src: "./assets/images/crystalGame.png",
+        src: "./assets/img/crystalGame.png",
         alt: "a screenshot of a game with 4 crystals",
         title: "The Crystal Game",
         description: "Each crystal has a different value. Can you get the correct score?",
