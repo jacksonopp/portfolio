@@ -79,16 +79,7 @@ const apps = [
         description: "A simple hangman-style game where you try to guess different beer styles.",
         gitHub: "https://github.com/jacksonopp/word-guess-game",
         appLink: "https://jacksonopp.github.io/word-guess-game/"
-    },
-    {
-        appName: "crystal guess",
-        src: "./assets/img/crystalGame.png",
-        alt: "a screenshot of a game with 4 crystals",
-        title: "The Crystal Game",
-        description: "Each crystal has a different value. Can you get the correct score?",
-        gitHub: "https://github.com/jacksonopp/unit-4-game",
-        appLink: "https://jacksonopp.github.io/unit-4-game/"
-    },
+    }
 ]
 
 function makeCards() {

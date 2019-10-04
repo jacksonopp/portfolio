@@ -69,10 +69,11 @@ p {
    margin-left: 50px;
    cursor: pointer;
    color: #ccc;
+   transition: 0.3s;
 }
 
 .side-nav .btn-close:hover {
-   color: #fff;
+   color: #888;
 }
 
 #about-me {
