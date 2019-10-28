@@ -1,12 +1,12 @@
 const apps = [
     {
-        appName: "redLightGreenLight",
-        src: "./assets/img/rlgl.png",
-        alt: "a screenshot of web app",
-        title: "Red Light Green Light",
-        description: "A full-stack MySQL and Express based social media web app that connects car enthusiasts to each other.",
-        gitHub: "https://github.com/jacksonopp/justice-league",
-        appLink: "https://jl-testing.herokuapp.com/"
+        appName: "shyBand",
+        src: "./assets/img/shyband.png",
+        alt: "a screenshot of two people messaging each other",
+        title: "Shy Band",
+        description: "A full-stack MERN web app that helps shy musicians meet each other and form a band.",
+        gitHub: "https://github.com/jacksonopp/shyBand",
+        appLink: "https://lit-harbor-52969.herokuapp.com"
     },
     {
         appName: "eatDaBurger",
@@ -36,6 +36,15 @@ const apps = [
         appLink: "https://jacksonopp.github.io/TeamCharmander/"
     },
     {
+        appName: "newsScrape",
+        src: "./assets/img/newsScrape.png",
+        alt: "a screenshot of a news web app",
+        title: "newsScrape",
+        description: "A full-stack Mongo and Express based news web app that lets users comment on articles.",
+        gitHub: "https://github.com/jacksonopp/newsScrapeReact",
+        appLink: "https://news-scrape-jacksonopp.herokuapp.com/"
+    },
+    {
         appName: "gifTastic",
         src: "./assets/img/gifTastic.png",
         alt: "a screenshot of a gif search engine",
@@ -52,6 +61,15 @@ const apps = [
         description: "A timed trivia quiz about the Cohen Brothers. How much do you know about the filmmaking duo?",
         gitHub: "https://github.com/jacksonopp/triviaGame",
         appLink: "https://jacksonopp.github.io/triviaGame/"
+    },
+    {
+        appName: "redLightGreenLight",
+        src: "./assets/img/rlgl.png",
+        alt: "a screenshot of web app",
+        title: "Red Light Green Light",
+        description: "A full-stack MySQL and Express based social media web app that connects car enthusiasts to each other.",
+        gitHub: "https://github.com/jacksonopp/justice-league",
+        appLink: "https://jl-testing.herokuapp.com/"
     },
     {
         appName: "nyt search",
