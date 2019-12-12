@@ -1,5 +1,6 @@
 document.addEventListener('keyup', (e) => {
-  if (e.code === 'keyA') {
+  console.log(e.code)
+  if (e.code === 'KeyA') {
     analytics.track("Key Pressed", {
       key: e.code
     })
