@@ -52,9 +52,19 @@
          <span href="#" class="btn-close" onclick="closeSlideMenu()"
             >&times;</span
          >
-         <a id="about-me-link" href="#about-me">about me</a>
-         <a href="#portfolio">portfolio</a>
-         <a href="#contact">contact</a>
+         <a
+            href="#about-me"
+            onclick="analytics.track('nav', {link: 'about-me'})"
+            >about me</a
+         >
+         <a
+            href="#portfolio"
+            onclick="analytics.track('nav', {link: 'portfolio'})"
+            >portfolio</a
+         >
+         <a href="#contact" onclick="analytics.track('nav', {link: 'contact'})"
+            >contact</a
+         >
       </div>
       <div class="home" id="home">
          <div class="title" id="title">
