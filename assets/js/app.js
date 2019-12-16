@@ -131,6 +131,12 @@ function makeCards() {
         githubLink.setAttribute("href", apps[i].gitHub);
         githubLink.setAttribute("target", "_blank");
         githubLink.innerText = "Github";
+        githubLink.addEventListener("click", () => {
+            analytics.track('User Visited', {
+                link: 'github',
+                app: apps[i].title
+            })
+        })
         cardBody.append(githubLink);
         //app link
         const appLink = document.createElement("a");
@@ -138,6 +144,12 @@ function makeCards() {
         appLink.setAttribute("href", apps[i].appLink);
         appLink.setAttribute("target", "_blank");
         appLink.innerText = "View App";
+        appLink.addEventListener("click", () => {
+            analytics.track('User Visited', {
+                link: 'deployed',
+                app: apps[i].title
+            })
+        })
         cardBody.append(appLink);
 
         document.getElementById("card-columns").append(card);
