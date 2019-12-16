@@ -1,4 +1,4 @@
-let userName
+let userName = "no name provided"
 document.getElementById("name-submit").addEventListener("click", e => {
   e.preventDefault()
   userName = document.getElementById("user-name").value || "no name provided";
