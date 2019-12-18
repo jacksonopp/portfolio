@@ -162,8 +162,12 @@ p {
    .navbar {
       z-index: 9000;
    }
+   .container {
+      max-width: 100%;
+   }
 }
-@media (max-width: 584px) {
+
+@media (max-width: 639px) {
    .side-nav {
       height: 100vh;
       width: 0px;
@@ -214,7 +218,6 @@ p {
       z-index: 9000;
    }
 }
-
 /* .about-me {
    height: 105vh;
    background: rebeccapurple;
