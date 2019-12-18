@@ -130,6 +130,7 @@ function makeCards() {
         githubLink.classList.add("btn", "btn-outline-success", "mr-1");
         githubLink.setAttribute("href", apps[i].gitHub);
         githubLink.setAttribute("target", "_blank");
+        githubLink.setAttribute("rel", "noopener");
         githubLink.innerText = "Github";
         githubLink.addEventListener("click", () => {
             analytics.track('User Visited', {
@@ -143,6 +144,7 @@ function makeCards() {
         appLink.classList.add("btn", "btn-outline-primary");
         appLink.setAttribute("href", apps[i].appLink);
         appLink.setAttribute("target", "_blank");
+        appLink.setAttribute("rel", "noopener");
         appLink.innerText = "View App";
         appLink.addEventListener("click", () => {
             analytics.track('User Visited', {
