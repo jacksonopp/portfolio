@@ -127,7 +127,7 @@ p {
       transition: 0.5s;
    }
    #about-me {
-      margin-left: 60px;
+      margin-left: 50px;
       margin-bottom: 15vh;
       margin-top: 5vh;
       transition: margin-left 0.5s;
@@ -136,7 +136,7 @@ p {
       width: 100%;
    }
    #portfolio-section {
-      margin-left: 0px;
+      margin-left: 60px;
       margin-bottom: 5vh;
       margin-top: 5vh;
       transition: margin-left 0.5s;
@@ -145,7 +145,7 @@ p {
       width: 100%;
    }
    #contact-me {
-      margin-left: 60px;
+      margin-left: 0px;
       margin-top: 7vh;
       transition: margin-left 0.5s;
       padding: 20px;
@@ -163,10 +163,17 @@ p {
       z-index: 9000;
    }
    .container {
-      max-width: 100%;
+      /* max-width: 100%; */
    }
 }
-
+@media (max-width: 768px) {
+   .container {
+      max-width: 100%;
+   }
+   #portfolio-section {
+      margin-left: 0px;
+   }
+}
 @media (max-width: 639px) {
    .side-nav {
       height: 100vh;
