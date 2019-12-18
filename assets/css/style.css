@@ -255,3 +255,7 @@ p {
 .title h1 {
    font-size: 70px;
 }
+
+.img {
+   min-height: 50px;
+}

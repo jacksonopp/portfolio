@@ -107,9 +107,9 @@ function makeCards() {
         card.classList.add("card");
         //img
         const cardImg = document.createElement("img");
-        cardImg.setAttribute("src", apps[i].src);
+        cardImg.setAttribute("data-src", apps[i].src);
         cardImg.setAttribute("alt", apps[i].alt)
-        cardImg.classList.add("card-img-top");
+        cardImg.classList.add("card-img-top", "lazy");
         card.append(cardImg);
         //card body
         const cardBody = document.createElement("div");
