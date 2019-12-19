@@ -146,7 +146,7 @@ function makeCards() {
         appLink.setAttribute("target", "_blank");
         appLink.setAttribute("rel", "noopener");
         appLink.innerText = "View App";
-        appLink.addEventListener("click", () => {
+        appLink.addEventListener("click", () => { //--------------------------
             analytics.track('User Visited', {
                 link: 'deployed',
                 app: apps[i].title
