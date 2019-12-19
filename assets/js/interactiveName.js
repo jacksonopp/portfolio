@@ -6,4 +6,7 @@ document.getElementById("name-submit").addEventListener("click", e => { //listen
   const hiNameH1 = document.getElementById("hi-name")
   hiNameH1.innerText = `Hi ${userNameForDiv}!`
   // console.log(userName)
+  analytics.identify("this user pressed submited thier name", {
+    userName: userName
+  })
 })
