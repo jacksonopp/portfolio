@@ -5,5 +5,5 @@ document.getElementById("name-submit").addEventListener("click", e => {
   const userNameForDiv = userName === "no name provided" ? "there" : userName //set username for div
   const hiNameH1 = document.getElementById("hi-name")
   hiNameH1.innerText = `Hi ${userNameForDiv}!`
-  console.log(userName)
+  // console.log(userName)
 })
