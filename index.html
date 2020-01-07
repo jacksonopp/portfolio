@@ -1,9 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <meta name="description" , content="Jackson Oppenheim's Portfolio" />
       <title>Jackson Oppenheim</title>
+      <!-- lazyload -->
+      <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
       <!-- Segment Begin -->
       <script src="./assets/js/segment.js"></script>
       <!-- Bootstrap Begin -->
@@ -52,29 +56,56 @@
          <span href="#" class="btn-close" onclick="closeSlideMenu()"
             >&times;</span
          >
+         <!-- ----------------------------------- |about me| --------------------------------------- -->
          <a
+            class="navlink"
             href="#about-me"
             onclick="analytics.track('nav', {link: 'about-me'})"
             >about me</a
          >
+         <!-- ----------------------------------- |portfolio| --------------------------------------- -->
          <a
-            href="#portfolio"
+            class="navlink"
+            href="#portfolio-section"
             onclick="analytics.track('nav', {link: 'portfolio'})"
             >portfolio</a
          >
-         <a href="#contact" onclick="analytics.track('nav', {link: 'contact'})"
+         <!-- ----------------------------------- |contact| ----------------------------------------- -->
+         <a
+            href="#contact"
+            onclick="analytics.track('nav', {link: 'contact'})"
+            class="navlink"
             >contact</a
          >
       </div>
       <div class="home" id="home">
          <div class="title" id="title">
-            <h1>Jackson Oppenheim</h1>
-            <h1>Full-Stack Developer</h1>
+            <h1>Hi, I'm Jackson. I'm a full-stack developer.</h1>
+            <h1 class="mt-5">What's your name?</h1>
+            <div class="input-group input-group-lg">
+               <input
+                  aria-label="Input"
+                  id="user-name"
+                  type="text"
+                  class="form-control"
+                  aria-label="Sizing example input"
+                  aria-describedby="inputGroup-sizing-lg"
+               />
+               <button
+                  id="name-submit"
+                  type="button"
+                  class="btn btn-outline-dark ml-2"
+                  aria-label="SubmitButton"
+               >
+                  Submit
+               </button>
+            </div>
+            <h1 id="hi-name"></h1>
          </div>
       </div>
       <div class="main container" id="about-me">
          <div class="row about-me">
-            <div class="col-8">
+            <div class="col-md-8 col-12">
                <h1>About Me</h1>
                <p>
                   Full-Stack Web Developer using a background in commercial
@@ -96,26 +127,33 @@
                <br />
                <br />
                <div class="row">
-                  <div class="col-3 offset-2">
-                     <a href="http://www.github.com/jacksonopp" target="_blank">
-                        <i class="fab fa-github fa-8x"></i>
+                  <div class="col-md-4 col-6 offset-md-2">
+                     <a
+                        href="http://www.github.com/jacksonopp"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Link to jackson's github"
+                     >
+                        <i class="fab fa-github fa-8x" alt="Github"></i>
                         <!-- <i class="fab fa-github-square fa-8x"></i> -->
                      </a>
                   </div>
-                  <div class="col-3">
+                  <div class="col-md-6 col-6">
                      <a
                         href="http://www.linkedin.com/in/jacksonopp"
                         target="_blank"
+                        rel="noopener"
+                        aria-label="Link to jackson's linkedin"
                      >
-                        <i class="fab fa-linkedin fa-8x"></i>
+                        <i class="fab fa-linkedin fa-8x" alt="LinkedIn"></i>
                      </a>
                   </div>
                </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3 offset-md-0 col-10 offset-2">
                <img
-                  src="./assets/img/profile.png"
-                  class="rounded-circle profile-pic"
+                  src="./assets/img/profileSM.webp"
+                  class="rounded-circle profile-pic lazy"
                   alt="A Photo of Jackson"
                   height="200px"
                />
@@ -124,21 +162,14 @@
       </div>
       <div class="row spacer"></div>
       <div class="container" id="portfolio-section">
-         <div class="row portfolio" id="portfolio">
+         <div class="row">
             <div class="col-12">
-               <div class="row">
-                  <div class="col-12">
-                     <h1>Portfolio</h1>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="column">
-                     <div
-                        class="mr-3 ml-3 card-columns"
-                        id="card-columns"
-                     ></div>
-                  </div>
-               </div>
+               <h1>Portfolio</h1>
+            </div>
+         </div>
+         <div class="row">
+            <div class="column">
+               <div class="mr-3 ml-3 card-columns" id="card-columns"></div>
             </div>
          </div>
       </div>
@@ -178,8 +209,10 @@
             </div>
          </div>
       </div>
+      <script src="./assets/js/interactiveName.js"></script>
       <script src="./assets/js/slideMenu.js"></script>
       <script src="./assets/js/app.js"></script>
       <script src="./assets/js/sTriggers.js"></script>
+      <script src="./assets/js/lazyLoad.js"></script>
    </body>
 </html>

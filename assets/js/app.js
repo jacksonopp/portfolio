@@ -1,7 +1,7 @@
 const apps = [
     {
         appName: "shyBand",
-        src: "./assets/img/shyband.png",
+        src: "./assets/img/shyband.webp",
         alt: "a screenshot of two people messaging each other",
         title: "Shy Band",
         description: "A full-stack MERN web app that helps shy musicians meet each other and form a band.",
@@ -10,7 +10,7 @@ const apps = [
     },
     {
         appName: "eatDaBurger",
-        src: "./assets/img/eatDaBurger.png",
+        src: "./assets/img/eatDaBurger.webp",
         alt: "a screenshot of web app",
         title: "Eat Da Burger",
         description: "A full-stack MySQL and Express based web app that allows you to enter the name of a burger and then devour it.",
@@ -19,7 +19,7 @@ const apps = [
     },
     {
         appName: "friendFinder",
-        src: "./assets/img/friendFinder.png",
+        src: "./assets/img/friendFinder.webp",
         alt: "a screenshot of a friend finder app",
         title: "Friend Finder",
         description: "An express.js web-app that finds your best new friend.",
@@ -28,7 +28,7 @@ const apps = [
     },
     {
         appName: "trackTrek",
-        src: "./assets/img/trackTrek.png",
+        src: "./assets/img/trackTrek.webp",
         alt: "a screenshot of a music playlist app",
         title: "TrackTrek",
         description: "An app to create a playlist based on drive time.",
@@ -37,7 +37,7 @@ const apps = [
     },
     {
         appName: "newsScrape",
-        src: "./assets/img/newsScrape.png",
+        src: "./assets/img/newsScrape.webp",
         alt: "a screenshot of a news web app",
         title: "newsScrape",
         description: "A full-stack Mongo and Express based news web app that lets users comment on articles.",
@@ -46,7 +46,7 @@ const apps = [
     },
     {
         appName: "gifTastic",
-        src: "./assets/img/gifTastic.png",
+        src: "./assets/img/gifTastic.webp",
         alt: "a screenshot of a gif search engine",
         title: "Gif Tastic!",
         description: "Look up gifs of your favorite comedians (or anything else) using the giphy API.",
@@ -55,7 +55,7 @@ const apps = [
     },
     {
         appName: "triviaGame",
-        src: "./assets/img/triviaGame.png",
+        src: "./assets/img/triviaGame.webp",
         alt: "a screenshot of a coen brothers trivia game",
         title: "Coen Brothers Trivia Game",
         description: "A timed trivia quiz about the Cohen Brothers. How much do you know about the filmmaking duo?",
@@ -64,7 +64,7 @@ const apps = [
     },
     {
         appName: "redLightGreenLight",
-        src: "./assets/img/rlgl.png",
+        src: "./assets/img/rlgl.webp",
         alt: "a screenshot of web app",
         title: "Red Light Green Light",
         description: "A full-stack MySQL and Express based social media web app that connects car enthusiasts to each other.",
@@ -73,7 +73,7 @@ const apps = [
     },
     {
         appName: "nyt search",
-        src: "./assets/img/nytSearch.png",
+        src: "./assets/img/nytSearch.webp",
         alt: "a screenshot of an app for searching the New York Times",
         title: "New York Times Search",
         description: "Search for articles using the New York Times API.",
@@ -82,7 +82,7 @@ const apps = [
     },
     {
         appName: "trainTime",
-        src: "./assets/img/trainTime.png",
+        src: "./assets/img/trainTime.webp",
         alt: "a screenshot of a train time calculator",
         title: "Train Time",
         description: "Input train frequency and arrival times, and the app will calculate when the next scheduled arrival is. Using localForage, the app remembers your trains from previous sessions.",
@@ -91,7 +91,7 @@ const apps = [
     },
     {
         appName: "word guess",
-        src: "./assets/img/hangman.png",
+        src: "./assets/img/hangman.webp",
         alt: "a screenshot of a hangman game",
         title: "Die wundersame Herausforderung der Bierstile!",
         description: "A simple hangman-style game where you try to guess different beer styles.",
@@ -107,9 +107,9 @@ function makeCards() {
         card.classList.add("card");
         //img
         const cardImg = document.createElement("img");
-        cardImg.setAttribute("src", apps[i].src);
+        cardImg.setAttribute("data-src", apps[i].src);
         cardImg.setAttribute("alt", apps[i].alt)
-        cardImg.classList.add("card-img-top");
+        cardImg.classList.add("card-img-top", "lazy");
         card.append(cardImg);
         //card body
         const cardBody = document.createElement("div");
@@ -130,6 +130,7 @@ function makeCards() {
         githubLink.classList.add("btn", "btn-outline-success", "mr-1");
         githubLink.setAttribute("href", apps[i].gitHub);
         githubLink.setAttribute("target", "_blank");
+        githubLink.setAttribute("rel", "noopener");
         githubLink.innerText = "Github";
         githubLink.addEventListener("click", () => {
             analytics.track('User Visited', {
@@ -143,8 +144,9 @@ function makeCards() {
         appLink.classList.add("btn", "btn-outline-primary");
         appLink.setAttribute("href", apps[i].appLink);
         appLink.setAttribute("target", "_blank");
+        appLink.setAttribute("rel", "noopener");
         appLink.innerText = "View App";
-        appLink.addEventListener("click", () => {
+        appLink.addEventListener("click", () => { //--------------------------
             analytics.track('User Visited', {
                 link: 'deployed',
                 app: apps[i].title
