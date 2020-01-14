@@ -6,7 +6,7 @@ const apps = [
         title: "Shy Band",
         description: "A full-stack MERN web app that helps shy musicians meet each other and form a band.",
         gitHub: "https://github.com/jacksonopp/shyBand",
-        appLink: "https://lit-harbor-52969.herokuapp.com"
+        appLink: "https://shyband.herokuapp.com"
     },
     {
         appName: "eatDaBurger",
