@@ -1,218 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <meta name="description" , content="Jackson Oppenheim's Portfolio" />
-      <title>Jackson Oppenheim</title>
-      <!-- lazyload -->
-      <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
-      <!-- Segment Begin -->
-      <script src="./assets/js/segment.js"></script>
-      <!-- Bootstrap Begin -->
-      <link
-         rel="stylesheet"
-         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-         crossorigin="anonymous"
-      />
-      <script
-         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-         crossorigin="anonymous"
-      ></script>
-      <script
-         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-         crossorigin="anonymous"
-      ></script>
-      <script
-         src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-         crossorigin="anonymous"
-      ></script>
-      <!-- Bootstrap End -->
-      <!-- fontawesome script -->
-      <script
-         src="https://kit.fontawesome.com/953989bd4b.js"
-         crossorigin="anonymous"
-      ></script>
-      <!-- style -->
-      <link rel="stylesheet" href="./assets/css/style.css" />
-   </head>
-   <body>
-      <nav class="navbar">
-         <span class="open-slide">
-            <svg width="30" height="30" onclick="openSlideMenu()">
-               <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
-               <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
-               <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
-            </svg>
-         </span>
-      </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" , content="Jackson Oppenheim's Portfolio" />
+    <title>Jackson Oppenheim</title>
+    <!-- lazyload -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+    <!-- Bootstrap Begin -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap End -->
+    <!-- fontawesome script -->
+    <script
+      src="https://kit.fontawesome.com/953989bd4b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <span class="open-slide">
+        <svg width="30" height="30" onclick="openSlideMenu()">
+          <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+          <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+          <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+        </svg>
+      </span>
+    </nav>
 
-      <div id="side-menu" class="side-nav">
-         <span href="#" class="btn-close" onclick="closeSlideMenu()"
-            >&times;</span
-         >
-         <!-- ----------------------------------- |about me| --------------------------------------- -->
-         <a
-            class="navlink"
-            href="#about-me"
-            onclick="analytics.track('nav', {link: 'about-me'})"
-            >about me</a
-         >
-         <!-- ----------------------------------- |portfolio| --------------------------------------- -->
-         <a
-            class="navlink"
-            href="#portfolio-section"
-            onclick="analytics.track('nav', {link: 'portfolio'})"
-            >portfolio</a
-         >
-         <!-- ----------------------------------- |contact| ----------------------------------------- -->
-         <a
-            href="#contact"
-            onclick="analytics.track('nav', {link: 'contact'})"
-            class="navlink"
-            >contact</a
-         >
+    <div id="side-menu" class="side-nav">
+      <span href="#" class="btn-close" onclick="closeSlideMenu()">&times;</span>
+      <!-- ----------------------------------- |about me| --------------------------------------- -->
+      <a
+        class="navlink"
+        href="#about-me"
+        onclick="analytics.track('nav', {link: 'about-me'})"
+        >about me</a
+      >
+      <!-- ----------------------------------- |portfolio| --------------------------------------- -->
+      <a
+        class="navlink"
+        href="#portfolio-section"
+        onclick="analytics.track('nav', {link: 'portfolio'})"
+        >portfolio</a
+      >
+      <!-- ----------------------------------- |contact| ----------------------------------------- -->
+      <a
+        href="#contact"
+        onclick="analytics.track('nav', {link: 'contact'})"
+        class="navlink"
+        >contact</a
+      >
+    </div>
+    <div class="home" id="home">
+      <div class="title container" id="title">
+        <h1>Hi, I'm Jackson. I'm a full-stack developer.</h1>
+        <h1 class="mt-5">What's your name?</h1>
+        <div class="input-group input-group-lg">
+          <input
+            aria-label="Input"
+            id="user-name"
+            type="text"
+            class="form-control"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-lg"
+          />
+          <button
+            id="name-submit"
+            type="button"
+            class="btn btn-outline-dark ml-2"
+            aria-label="SubmitButton"
+          >
+            Submit
+          </button>
+        </div>
+        <h1 id="hi-name"></h1>
       </div>
-      <div class="home" id="home">
-         <div class="title" id="title">
-            <h1>Hi, I'm Jackson. I'm a full-stack developer.</h1>
-            <h1 class="mt-5">What's your name?</h1>
-            <div class="input-group input-group-lg">
-               <input
-                  aria-label="Input"
-                  id="user-name"
-                  type="text"
-                  class="form-control"
-                  aria-label="Sizing example input"
-                  aria-describedby="inputGroup-sizing-lg"
-               />
-               <button
-                  id="name-submit"
-                  type="button"
-                  class="btn btn-outline-dark ml-2"
-                  aria-label="SubmitButton"
-               >
-                  Submit
-               </button>
+    </div>
+    <div class="main container" id="about-me">
+      <div class="row about-me">
+        <div class="col-md-8 col-12">
+          <h1>About Me</h1>
+          <p>
+            Full-Stack Web Developer using a background in commercial
+            entertainment to build engaging experiences on the web. Earned a
+            certificate in Full Stack Development from the University of
+            Minnesota, with skills in JavaScript, CSS, React.js, Node, Express,
+            MySQL and MongoDB. Known as a big-picture thinker and problem-solver
+            who loves tackling a big challenge. In my previous job, I moved the
+            company from a pen-and-paper inventory and invoicing system to a
+            robust and user-friendly cloud-based database. I developed back-end
+            server and routing logic and front-end experiences in a recent
+            project, where I was the tech lead of a team of five that developed
+            a Tinder-like web-app that connects car enthusiasts to one another.
+            Eager to undertake complex issues with a like-minded team to create
+            memorable experiences on the web.
+          </p>
+          <br />
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-md-4 col-6 offset-md-2">
+              <a
+                href="http://www.github.com/jacksonopp"
+                target="_blank"
+                rel="noopener"
+                aria-label="Link to jackson's github"
+              >
+                <i class="fab fa-github fa-8x" alt="Github"></i>
+                <!-- <i class="fab fa-github-square fa-8x"></i> -->
+              </a>
             </div>
-            <h1 id="hi-name"></h1>
-         </div>
+            <div class="col-md-6 col-6">
+              <a
+                href="http://www.linkedin.com/in/jacksonopp"
+                target="_blank"
+                rel="noopener"
+                aria-label="Link to jackson's linkedin"
+              >
+                <i class="fab fa-linkedin fa-8x" alt="LinkedIn"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 offset-md-0 col-10 offset-2">
+          <img
+            src="./assets/img/profileSM.webp"
+            class="rounded-circle profile-pic lazy"
+            alt="A Photo of Jackson"
+            height="200px"
+          />
+        </div>
       </div>
-      <div class="main container" id="about-me">
-         <div class="row about-me">
-            <div class="col-md-8 col-12">
-               <h1>About Me</h1>
-               <p>
-                  Full-Stack Web Developer using a background in commercial
-                  entertainment to build engaging experiences on the web. Earned
-                  a certificate in Full Stack Development from the University of
-                  Minnesota, with skills in JavaScript, CSS, React.js, Node,
-                  Express, MySQL and MongoDB. Known as a big-picture thinker and
-                  problem-solver who loves tackling a big challenge. In my
-                  previous job, I moved the company from a pen-and-paper
-                  inventory and invoicing system to a robust and user-friendly
-                  cloud-based database. I developed back-end server and routing
-                  logic and front-end experiences in a recent project, where I
-                  was the tech lead of a team of five that developed a
-                  Tinder-like web-app that connects car enthusiasts to one
-                  another. Eager to undertake complex issues with a like-minded
-                  team to create memorable experiences on the web.
-               </p>
-               <br />
-               <br />
-               <br />
-               <div class="row">
-                  <div class="col-md-4 col-6 offset-md-2">
-                     <a
-                        href="http://www.github.com/jacksonopp"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="Link to jackson's github"
-                     >
-                        <i class="fab fa-github fa-8x" alt="Github"></i>
-                        <!-- <i class="fab fa-github-square fa-8x"></i> -->
-                     </a>
-                  </div>
-                  <div class="col-md-6 col-6">
-                     <a
-                        href="http://www.linkedin.com/in/jacksonopp"
-                        target="_blank"
-                        rel="noopener"
-                        aria-label="Link to jackson's linkedin"
-                     >
-                        <i class="fab fa-linkedin fa-8x" alt="LinkedIn"></i>
-                     </a>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-3 offset-md-0 col-10 offset-2">
-               <img
-                  src="./assets/img/profileSM.webp"
-                  class="rounded-circle profile-pic lazy"
-                  alt="A Photo of Jackson"
-                  height="200px"
-               />
-            </div>
-         </div>
+    </div>
+    <div class="row spacer"></div>
+    <div class="container" id="portfolio-section">
+      <div class="row">
+        <div class="col-12">
+          <h1>Portfolio</h1>
+        </div>
       </div>
-      <div class="row spacer"></div>
-      <div class="container" id="portfolio-section">
-         <div class="row">
+      <div class="row">
+        <div class="column">
+          <div class="mr-3 ml-3 card-columns" id="card-columns"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row spacer"></div>
+    <div class="container" id="contact-me">
+      <div class="row contact" id="contact">
+        <div class="col-12">
+          <div class="row">
             <div class="col-12">
-               <h1>Portfolio</h1>
+              <h1>Contact Me</h1>
             </div>
-         </div>
-         <div class="row">
-            <div class="column">
-               <div class="mr-3 ml-3 card-columns" id="card-columns"></div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h3>Phone: <a href="tel:4406656551">440.665.6551</a></h3>
+              <h3>
+                Email:
+                <a href="mailto: jacksonopp@gmail.com">jacksonopp@gmail.com</a>
+              </h3>
+              <h3>
+                Github:
+                <a href="http://www.github.com/jacksonopp">/jacksonopp</a>
+              </h3>
+              <h3>
+                LinkedIn:
+                <a
+                  href="https://www.linkedin.com/in/jackson-oppenheim-a114b38a/"
+                  >jackson-oppenheim</a
+                >
+              </h3>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-      <div class="row spacer"></div>
-      <div class="container" id="contact-me">
-         <div class="row contact" id="contact">
-            <div class="col-12">
-               <div class="row">
-                  <div class="col-12">
-                     <h1>Contact Me</h1>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col">
-                     <h3>Phone: <a href="tel:4406656551">440.665.6551</a></h3>
-                     <h3>
-                        Email:
-                        <a href="mailto: jacksonopp@gmail.com"
-                           >jacksonopp@gmail.com</a
-                        >
-                     </h3>
-                     <h3>
-                        Github:
-                        <a href="http://www.github.com/jacksonopp"
-                           >/jacksonopp</a
-                        >
-                     </h3>
-                     <h3>
-                        LinkedIn:
-                        <a
-                           href="https://www.linkedin.com/in/jackson-oppenheim-a114b38a/"
-                           >jackson-oppenheim</a
-                        >
-                     </h3>
-                  </div>
-               </div>
-            </div>
-         </div>
+    </div>
+    <div class="cookie-notification hide">
+      <p id="cookie-text">
+        This website or its third-party tools process personal data (e.g.
+        browsing data or IP addresses) and use cookies or other identifiers. The
+        purpose of these cookies is to demonstrate SEO practices, so nothing is
+        done with your information. You accept the use of cookies or other
+        identifiers by closing or dismissing this notice, by clicking a link or
+        button or by continuing to browse otherwise. You may disable tracking by
+        clicking "Don't track me"
+      </p>
+
+      <div class="cookie-buttons">
+        <button id="accept">Accept</button>
+        <button id="dont-accept">Don't track me</button>
       </div>
-      <script src="./assets/js/interactiveName.js"></script>
-      <script src="./assets/js/slideMenu.js"></script>
-      <script src="./assets/js/app.js"></script>
-      <script src="./assets/js/sTriggers.js"></script>
-      <script src="./assets/js/lazyLoad.js"></script>
-   </body>
+    </div>
+    <!-- Segment Begin -->
+    <script src="./assets/js/segment.js"></script>
+
+    <script src="./assets/js/interactiveName.js"></script>
+    <script src="./assets/js/slideMenu.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/sTriggers.js"></script>
+    <script src="./assets/js/lazyLoad.js"></script>
+  </body>
 </html>
